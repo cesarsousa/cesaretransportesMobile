@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="vermelho">#ff0000</color>
+	<color name="azul">#0000ff</color>
+	<color name="verde">#00ff00</color>
+	<color name="branco">#ffffff</color>
+	<color name="cinzaEscuro">#A9A9A9</color>
+	<color name="laranjadoEscuro">#FF8C00</color>
+	<color name="laranjadoLogo">#EC610D</color>
+	<color name="laranjado">#FFA500</color>
+	<color name="preto">#000000</color>
+	<color name="cinzaSuperEscuro">#363636</color>
+	<color name="verdeOliva">#556B2F</color>
+	<color name="vermelhoEscuro">#A52A2A</color>
+	<color name="cinzaClaro">#E8E8E8</color>	
+</resources>

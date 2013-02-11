@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="br.com.cesaretransportesMobile.activity"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+    
+    <application android:icon="@drawable/aguia" android:label="@string/app_name">
+    	<!-- Necessário para o MapActivity -->
+		<uses-library android:name="com.google.android.maps" />
+    
+        <activity android:name=".Login"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MenuAdmin"/>        
+        <activity android:name=".VisualizarClientes" android:theme="@android:style/Theme.Light"/>
+        <activity android:name=".DetalheCliente"/>
+        <activity android:name=".EscreverMensagem"/>
+        <activity android:name=".VisualizarVeiculos" android:theme="@android:style/Theme.Light"/>
+        <activity android:name=".DetalheVeiculo"/>
+        <activity android:name=".EditarVeiculo"/>
+        <activity android:name=".AcessarGmail"/>
+        <activity android:name=".MenuCliente"/>
+        <activity android:name=".VisualizarOrcamentos" android:theme="@android:style/Theme.Light"/>
+        <activity android:name=".DetalheOrcamento"/>
+        <activity android:name=".ClientePerfil" android:theme="@android:style/Theme.Light"/>
+        <activity android:name=".ClienteOrcamento"/>
+        <activity android:name=".ClienteContato"/>
+        <activity android:name=".ClienteVeiculo"/>
+        <activity android:name=".ClienteMudarSenha"/>
+        <activity android:name=".ClienteAlterarDados"/>
+        <activity android:name=".RecuperarSenha"/>
+        <activity android:name=".RespostaRecuperarSenha"/>
+        <activity android:name=".ResponderOrcamento"/>
+        <activity android:name=".EnviarEmail"/>
+        <activity android:name=".TelaErro"/>
+        <activity android:name=".TelaErroCliente"/>
+        <activity android:name=".OpcaoVisualizarClientes"/>
+        <activity android:name=".OpcaoVisualizarOrcamentos"/>
+        <activity android:name=".RecadastrarCliente"/>
+        <activity android:name=".OpcaoOrcamento"/>
+        <activity android:name=".ClienteVisualizarOrcamentos" android:theme="@android:style/Theme.Light"/>
+        <activity android:name=".ClienteVisualizarServicos" android:theme="@android:style/Theme.Light"/>        
+        <activity android:name=".ConfirmarOrcamentoComoServico" android:theme="@android:style/Theme.Light"/>
+        <activity android:name=".Mapa"/>
+        <activity android:name=".MenuOpcaoMapa"/>
+        <activity android:name=".DetalheServico"/>
+        <activity android:name=".VisualizarServicos" android:theme="@android:style/Theme.Light"/>
+                                     
+    </application>
+</manifest>

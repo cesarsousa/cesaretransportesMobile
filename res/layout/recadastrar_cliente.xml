@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+    <LinearLayout 
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:padding="5dip"
+    	android:background="@color/branco">	
+    
+		<ImageView
+   			android:src="@drawable/detalhe_cliente_header"
+   			android:layout_width="fill_parent" 
+   			android:layout_height="wrap_content"/>
+   		   			
+   		<TextView  
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content" 
+    		android:text="Reativação de Conta"
+    		android:layout_gravity="center"
+    		android:textColor="@color/laranjadoEscuro"
+    		android:textStyle="bold"
+    		android:textSize="15px"
+    		android:paddingBottom="5px"/>
+    		
+    	<TextView  
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content" 
+    		android:text="Consta em nosso sistema que sua conta está desativada."
+    		android:textColor="@color/preto"
+    		android:textStyle="italic"
+    		android:textSize="10px"
+    		android:paddingBottom="5px"/>
+    		
+    	<TextView  
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content" 
+    		android:text="Seus Dados Cadastrais São:"
+    		android:textColor="@color/cinzaSuperEscuro"
+    		android:textStyle="bold"
+    		android:textSize="12px"
+    		android:paddingBottom="5px"/>
+    		
+    		<TextView  
+    		android:id="@+id/recadastrarCliente_nome"
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content" 
+    		android:textColor="@color/preto"
+    		android:textStyle="italic"
+    		android:textSize="10px"
+    		android:paddingBottom="5px"/>
+    		
+    		<TextView
+    		android:id="@+id/recadastrarCliente_email"    		  
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content" 
+    		android:textColor="@color/preto"
+    		android:textStyle="italic"
+    		android:textSize="10px"
+    		android:paddingBottom="5px"/>
+    		
+    		<TextView
+    		android:id="@+id/recadastrarCliente_documento"  
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content" 
+    		android:textColor="@color/preto"
+    		android:textStyle="italic"
+    		android:textSize="10px"
+    		android:paddingBottom="5px"/>
+    		
+    		<TextView
+    		android:id="@+id/recadastrarCliente_telefone"  
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content" 
+    		android:textColor="@color/preto"
+    		android:textStyle="italic"
+    		android:textSize="10px"
+    		android:paddingBottom="5px"/>
+    		
+    		<TextView
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content"
+    		android:text="Você pode alterar seus dados em 'Meu Perfil >> Editar Perfil'." 
+    		android:textColor="@color/azul"
+    		android:textSize="10px"
+    		android:paddingBottom="5px"/>   	    	
+    		
+    		<TableLayout
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:background="@color/laranjado"
+    			android:paddingTop="5px"
+    			android:stretchColumns="1">
+    			
+    			<TableRow>
+    			<TextView  
+		    		android:layout_width="wrap_content" 
+		    		android:layout_height="wrap_content"
+		    		android:layout_gravity="center_vertical"
+		    		android:gravity="left"
+		    		android:text="Gostaria de reativar sua Conta?"
+		    		android:textColor="@color/cinzaSuperEscuro"
+		    		android:textStyle="bold"
+		    		android:textSize="10px"
+		    		android:paddingLeft="5px"/>
+    			
+    			<Button
+    				android:id="@+id/recadastrarCliente_btReativar"
+    				android:layout_width= "wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:layout_gravity="right"
+    				android:text=" Reativar Conta "
+    				android:paddingRight="5px"/>
+    			</TableRow>    			   			
+    		</TableLayout>
+    		
+    		<TableLayout
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:background="@color/cinzaEscuro"
+    			android:paddingTop="5px"
+    			android:stretchColumns="1">
+    			
+    			<TableRow>
+    			<TextView  
+		    		android:layout_width="wrap_content" 
+		    		android:layout_height="wrap_content"
+		    		android:layout_gravity="center_vertical"
+		    		android:gravity="left" 
+		    		android:text="Não quero reativar a conta!"
+		    		android:textColor="@color/cinzaSuperEscuro"
+		    		android:textStyle="bold"
+		    		android:textSize="10px"
+		    		android:paddingLeft="5px"/>
+    			
+    			<Button
+    				android:id="@+id/recadastrarCliente_btCancelar"
+    				android:layout_width= "wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:layout_gravity="right"
+    				android:text=" Cancelar "
+    				android:paddingRight="5px"/>
+    			</TableRow>    			   			
+    		</TableLayout> 
+    		
+    	<LinearLayout 
+    		android:orientation="vertical"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:paddingTop="5px"
+    		android:paddingBottom="5px"
+    		android:background="@color/laranjadoLogo">
+    		
+    		<TextView    			
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="Cesare Transportes - 2011"
+    			android:layout_gravity="center"
+    			android:textStyle="bold"
+    			android:textColor="@color/laranjado"/>
+    		
+    	</LinearLayout>    		    	
+	</LinearLayout>
+</ScrollView>

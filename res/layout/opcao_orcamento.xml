@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+    <LinearLayout 
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:background="@color/preto"
+    	android:padding="5dip">	
+    
+		<ImageView
+   			android:src="@drawable/detalhe_cliente_header"
+   			android:layout_width="fill_parent" 
+   			android:layout_height="wrap_content"/>
+   		   			
+   		<TextView  
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content" 
+    		android:text="Opção de Orçamento"
+    		android:gravity="center"
+    		android:textColor="@color/laranjadoEscuro"
+    		android:textStyle="bold"
+    		android:textSize="20px"
+    		android:paddingBottom="5px"/>
+    		
+    	<View
+    		android:layout_width= "wrap_content" 
+    		android:layout_height="1px"
+    		android:background="@color/cinzaClaro"/>
+    		
+    	<TextView
+	    	android:layout_width= "wrap_content" 
+	    	android:layout_height="wrap_content"
+	    	android:text="Novo Orçamento"
+	    	android:textColor="@color/laranjado"
+	    	android:textStyle="bold"
+	    	android:textSize="15px"/>   	
+    		
+    	<TableLayout
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:stretchColumns="1">   		
+    		
+    		<TableRow>    			
+	    		<TextView
+	    			android:layout_width= "wrap_content" 
+	    			android:layout_height="wrap_content"
+	    			android:layout_gravity="center_vertical"	    				
+	    			android:text="Clique para enviar um novo orçamento"
+	    			android:textColor="@color/branco"
+	    			android:textStyle="italic"
+	    			android:textSize="10px"/> 		
+	    		
+	    		<Button
+	    			android:id="@+id/opcaoOrcamento_btNovo"
+	    			android:layout_width= "wrap_content" 
+	    			android:layout_height="wrap_content"
+	    			android:layout_gravity="right"
+	    			android:text="Novo"/>	    		
+    		</TableRow>
+    	</TableLayout>
+    			
+    	<View
+    		android:layout_width= "wrap_content" 
+    		android:layout_height="1px"
+    		android:background="@color/cinzaClaro"/>
+    	
+    	<TextView
+	    	android:layout_width= "wrap_content" 
+	    	android:layout_height="wrap_content"
+	    	android:text="Listar meus Orçamento"
+	    	android:textColor="@color/laranjado"
+	    	android:textStyle="bold"
+	    	android:textSize="15px"/>
+	    	
+	    <TableLayout
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:stretchColumns="1">   		
+    		
+    		<TableRow>    				
+	    		<TextView
+	    			android:layout_width= "wrap_content" 
+	    			android:layout_height="wrap_content"
+	    			android:layout_gravity="center_vertical"
+	    			android:text="Clique para exibir os seus orçamentos"
+	    			android:textColor="@color/branco"
+	    			android:textStyle="italic"
+	    			android:textSize="10px"/> 	
+	    		
+	    		<Button
+	    			android:id="@+id/opcaoOrcamento_btListarOrcamentos"
+	    			android:layout_width= "wrap_content" 
+	    			android:layout_height="wrap_content"
+	    			android:layout_gravity="right"
+	    			android:text="Listar"/>	    		
+    		</TableRow>
+    	</TableLayout>
+    		
+    	<View
+    		android:layout_width= "wrap_content" 
+    		android:layout_height="1px"
+    		android:background="@color/cinzaClaro"/>
+    	
+    	<TextView
+	    	android:layout_width= "wrap_content" 
+	    	android:layout_height="wrap_content"
+	    	android:text="Listar meus Serviços"
+	    	android:textColor="@color/laranjado"
+	    	android:textStyle="bold"
+	    	android:textSize="15px"/>
+    	
+    	<TableLayout
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:stretchColumns="1">
+    		
+    		<TableRow>
+	    		<TextView
+	    			android:layout_width= "wrap_content" 
+	    			android:layout_height="wrap_content"
+	    			android:layout_gravity="center_vertical"
+	    			android:text="Clique para exibir os seus Serviços"
+	    			android:textColor="@color/branco"
+	    			android:textStyle="italic"
+	    			android:textSize="10px"/>   		
+	    		
+	    		<Button
+	    			android:id="@+id/opcaoOrcamento_btListarServicos"
+	    			android:layout_width= "wrap_content" 
+	    			android:layout_height="wrap_content"
+	    			android:layout_gravity="right"
+	    			android:text="Listar"/>	    		
+    		</TableRow>    		    	
+    	</TableLayout>
+    	
+    	<View
+    		android:layout_width= "wrap_content" 
+    		android:layout_height="1px"
+    		android:background="@color/cinzaClaro"
+    		android:paddingBottom="5px"/>
+    		
+    		<LinearLayout
+    			android:orientation="horizontal"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:gravity="center"
+    			android:background="@color/laranjado"
+    			android:paddingTop="5px">    			
+    			
+    			<Button
+    				android:id="@+id/opcaoOrcamento_btMenu"
+    				android:layout_width= "wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="MENU"/>   			
+    		</LinearLayout> 
+    		
+    	<LinearLayout 
+    		android:orientation="vertical"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:paddingTop="5px"
+    		android:paddingBottom="5px"
+    		android:background="@color/laranjadoLogo">
+    		
+    		<TextView    			
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="Cesare Transportes - 2011"
+    			android:layout_gravity="center"
+    			android:textStyle="bold"
+    			android:textColor="@color/laranjado"/>
+    		
+    	</LinearLayout>    		    	
+	</LinearLayout>
+</ScrollView>

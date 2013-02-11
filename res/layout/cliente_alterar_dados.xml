@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+    <LinearLayout 
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:background="@color/preto"
+    	android:padding="5dip">	
+    
+		<ImageView
+   			android:src="@drawable/detalhe_cliente_header"
+   			android:layout_width="fill_parent" 
+   			android:layout_height="wrap_content"/>
+   		   			
+   		<TextView  
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content" 
+    		android:text="Editar Dados"
+    		android:gravity="center"
+    		android:textColor="@color/laranjadoEscuro"
+    		android:textStyle="bold"
+    		android:textSize="20px"
+    		android:typeface="serif"/>
+    		
+    	<View 
+    		android:layout_width= "fill_parent"
+    		android:layout_height="1px"
+    		android:background="@color/cinzaEscuro"/>    	
+    	
+    	
+    	<TextView
+    		android:id="@+id/clienteAlterarDados_nome"  
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content" 
+    		android:textColor="@color/branco"
+    		android:textStyle="bold"
+    		android:typeface="serif"/>
+    			
+    	<TextView
+    		android:id="@+id/clienteAlterarDados_email"  
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content" 
+    		android:textColor="@color/branco"
+    		android:textStyle="bold"
+    		android:typeface="serif"/> 	
+    		
+    	<View 
+    		android:layout_width= "fill_parent"
+    		android:layout_height="1px"
+    		android:background="@color/cinzaEscuro"/>
+    	
+    	<TextView
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content"
+    		android:text="Para alterar digite o novo valor no respectivo campo." 
+    		android:textColor="@color/branco"
+    		android:textSize="15px"
+    		android:textStyle="italic"
+    		android:typeface="serif"/>
+    		
+    	<TableLayout
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content"
+    		android:stretchColumns="1">
+    		
+    		<TableRow>
+    			<TextView
+    				android:layout_width="fill_parent" 
+    				android:layout_height="wrap_content"
+    				android:text="Telefone" 
+    				android:textColor="@color/laranjado"
+    				android:textStyle="bold"
+    				android:typeface="serif"/>    		
+    		</TableRow>
+    		
+    		<TableRow>   				
+    			<EditText
+    				android:id="@+id/clienteAlterarDados_dddTelefone"
+    				android:layout_width="fill_parent" 
+    				android:layout_height="wrap_content"
+    				android:numeric="integer"
+    				android:maxLength="2"/>    			
+    			
+    			<EditText
+    				android:id="@+id/clienteAlterarDados_numTelefone"
+    				android:layout_width="fill_parent" 
+    				android:layout_height="wrap_content"
+    				android:numeric="integer"
+    				android:maxLength="8"/>    				
+    		</TableRow>
+    		<TableRow>
+    			<TextView
+    				android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="complemento"
+    				android:textColor="@color/branco"/>
+    			
+    			<EditText
+    				android:id="@+id/clienteAlterarDados_telefoneComplemento"
+    				android:layout_width="fill_parent" 
+    				android:layout_height="wrap_content"/>
+    		</TableRow>
+    		
+    		<TableRow>
+    			<TextView
+    				android:layout_width="fill_parent" 
+    				android:layout_height="wrap_content"
+    				android:text="Documento" 
+    				android:textColor="@color/laranjado"
+    				android:textStyle="bold"
+    				android:typeface="serif"/>
+    		</TableRow>
+    		
+    		<TableRow>
+    			 <RadioGroup
+    				android:id="@+id/clienteAlterarDados_radiogroup"
+    				android:orientation="horizontal"
+    				android:layout_width="fill_parent"
+    				android:layout_height="wrap_content">
+    	
+    				<RadioButton
+    					android:id="@+id/clienteAlterarDados_radioCpf"
+    					android:layout_width="wrap_content" 
+    					android:layout_height="wrap_content"
+    					android:text="CPF"
+    					android:checked="false"/>
+    		
+    				<RadioButton
+    					android:id="@+id/clienteAlterarDados_radioCnpj"
+    					android:layout_width="wrap_content" 
+    					android:layout_height="wrap_content"
+    					android:text="CNPJ"
+    					android:checked="false"/>
+   				 </RadioGroup>    		
+    		</TableRow>
+    		
+    		<TableRow>
+    			<TextView
+    				android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="número"
+    				android:textColor="@color/branco"/>
+    			
+    			<EditText
+    				android:id="@+id/clienteAlterarDados_numDocumento"
+    				android:layout_width="fill_parent" 
+    				android:layout_height="wrap_content"
+    				android:numeric="integer"
+    				android:maxLength="14"/>
+    		</TableRow>    		  		
+    	</TableLayout> 
+    	
+    	<TextView
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content"
+    		android:text="Endereço" 
+    		android:textColor="@color/laranjado"
+    		android:textStyle="bold"
+    		android:typeface="serif"/>  	    	
+    		
+    		
+    	<TextView
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content"
+    		android:text="formato: (nome da rua) (numero), (bairro)." 
+    		android:textColor="@color/branco"
+    		android:textSize="10px"
+    		android:textStyle="italic"
+    		android:typeface="serif"/>    		
+    	
+    	<EditText
+    		android:id="@+id/clienteAlterarDados_enderecoLocalizacao"
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content"
+    		android:singleLine="true"/> 		
+    		
+    		
+    	<TableLayout
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content"
+    		android:stretchColumns="1">
+    		
+    		<TableRow>
+    			<TextView
+    				android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="Cidade"
+    				android:textColor="@color/branco"/>
+    				
+    			<EditText
+    				android:id="@+id/clienteAlterarDados_enderecoCidade"
+    				android:layout_width="fill_parent" 
+    				android:layout_height="wrap_content"
+    				android:singleLine="true"/>    				    		
+    		</TableRow>
+    		<TableRow>
+    			<TextView
+    				android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="Estado"
+    				android:typeface="serif"
+    				android:textStyle="bold"/>
+    			
+    			<AutoCompleteTextView
+   					android:id="@+id/clienteAlterarDados_enderecoEstado"  
+    				android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:completionThreshold="1"
+    				android:completionHint="sigla do estado."
+    				android:maxLength="2"/>    			
+    		</TableRow>	
+    	</TableLayout>
+    	
+    		<LinearLayout
+    			android:orientation="horizontal"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:gravity="center"
+    			android:background="@color/laranjado"
+    			android:paddingTop="5px">
+    			
+    			<Button
+    				android:id="@+id/clienteAlterarDados_btVoltar"
+    				android:layout_width= "wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="Voltar"/>
+    			
+    			<Button
+    				android:id="@+id/clienteAlterarDados_btConfirmar"   				
+    				android:layout_width= "wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="CONFIRMAR"/>
+    				
+    			<Button
+    				android:id="@+id/clienteAlterarDados_btMenu"
+    				android:layout_width= "wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="Menu"/>   			
+    		</LinearLayout> 
+    		
+    	<LinearLayout 
+    		android:orientation="vertical"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:paddingTop="5px"
+    		android:paddingBottom="5px"
+    		android:background="@color/laranjadoLogo">
+    		
+    		<TextView    			
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="Cesare Transportes - 2011"
+    			android:layout_gravity="center"
+    			android:textStyle="bold"
+    			android:textColor="@color/laranjado"/>
+    		
+    	</LinearLayout>    		    	
+	</LinearLayout>
+</ScrollView>

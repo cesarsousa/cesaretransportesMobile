@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+    <LinearLayout
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent">
+    	
+    	<ImageView
+   			android:src="@drawable/detalhe_cliente_header"
+   			android:layout_width="fill_parent" 
+   			android:layout_height="wrap_content"/>
+    	
+    	<TextView
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:textColor="@color/laranjado"
+	    	android:text="Senha Atual"/>
+    		
+    	<EditText
+	    	android:id="@+id/mudaSenha_atual"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:password="true"/>
+    	
+    	<TextView
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:textColor="@color/laranjado"
+	    	android:text="Nova Senha"/>
+    	
+    	<EditText
+	    	android:id="@+id/mudaSenha_nova1"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:password="true"/>
+    	
+    	<TextView
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="Confirme a nova senha"
+	    	android:textColor="@color/laranjado"/>
+    	
+    	<EditText
+	    	android:id="@+id/mudaSenha_nova2"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:password="true"/>
+	    	
+	    <LinearLayout
+    			android:orientation="horizontal"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:gravity="center"
+    			android:background="@color/laranjado"
+    			android:paddingTop="5px">
+    			
+    			<Button
+    				android:id="@+id/mudarSenha_btConfirmar"
+    				android:layout_width= "wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="Confirmar"/>
+    				
+    			<Button
+    				android:id="@+id/mudarSenha_btCancelar"
+    				android:layout_width= "wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="Cancelar"/>   			
+    		</LinearLayout> 
+    		
+    	<LinearLayout 
+    		android:orientation="vertical"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:paddingTop="5px"
+    		android:paddingBottom="5px"
+    		android:background="@color/laranjadoLogo">
+    		
+    		<TextView    			
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="Cesare Transportes - 2011"
+    			android:layout_gravity="center"
+    			android:textStyle="bold"
+    			android:textColor="@color/laranjado"/>
+    		
+    	</LinearLayout>		    		    	
+	</LinearLayout>
+</ScrollView>
+

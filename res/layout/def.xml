@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+    <LinearLayout 
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:background="@color/preto"
+    	android:padding="5dip">	
+    
+		<ImageView
+   			android:src="@drawable/detalhe_cliente_header"
+   			android:layout_width="fill_parent" 
+   			android:layout_height="wrap_content"/>
+   		   			
+   		<TextView  
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content" 
+    		android:text="Texto informativo"
+    		android:gravity="center"
+    		android:textColor="@color/laranjadoEscuro"
+    		android:textStyle="bold"
+    		android:textSize="20px"/>		
+    		
+    	<View 
+    		android:layout_width= "fill_parent"
+    		android:layout_height="1px"
+    		android:background="@color/cinzaEscuro"/>    	
+    		
+    		<LinearLayout
+    			android:orientation="horizontal"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:gravity="center"
+    			android:background="@color/laranjado"
+    			android:paddingTop="5px">
+    			
+    			<Button
+    				android:layout_width= "wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="Botao1"/>
+    			
+    			<Button
+    				android:layout_width= "wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="Botao2"/>
+    				
+    			<Button
+    				android:layout_width= "wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="Botao3"/>   			
+    		</LinearLayout> 
+    		
+    	<LinearLayout 
+    		android:orientation="vertical"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:paddingTop="5px"
+    		android:paddingBottom="5px"
+    		android:background="@color/laranjadoLogo">
+    		
+    		<TextView    			
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="Cesare Transportes - 2011"
+    			android:layout_gravity="center"
+    			android:textStyle="bold"
+    			android:textColor="@color/laranjado"/>
+    		
+    	</LinearLayout>    		    	
+	</LinearLayout>
+</ScrollView>

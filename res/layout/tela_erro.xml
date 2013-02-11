@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+    <LinearLayout 
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:background="@color/vermelhoEscuro"
+    	android:padding="5dip">	
+    
+		<ImageView
+   			android:src="@drawable/detalhe_cliente_header"
+   			android:layout_width="fill_parent" 
+   			android:layout_height="wrap_content"/>
+   		   			
+   		<TextView  
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content" 
+    		android:text="Ocorreu um erro inexperado"
+    		android:gravity="center"
+    		android:textColor="@color/branco"
+    		android:textStyle="bold"
+    		android:textSize="20px"/>
+    		
+    		
+    	<TextView 
+    		android:id="@+id/telaErro_mensagemErro" 
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content" 
+    		android:gravity="center"
+    		android:textColor="@color/branco"
+    		android:textStyle="bold"/>		
+    		
+    	<View 
+    		android:layout_width= "fill_parent"
+    		android:layout_height="1px"
+    		android:background="@color/cinzaEscuro"/>    	
+    		
+    		<LinearLayout
+    			android:orientation="vertical"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:gravity="center"
+    			android:background="@color/laranjado"
+    			android:paddingTop="5px">
+    			
+    			<TextView
+    				android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+    				android:textColor="@color/preto"
+    				android:text="Retornar para a tela anterior"/>
+    			
+    			<Button
+    				android:id="@+id/telaErro_btRetornar"
+    				android:layout_width="fill_parent" 
+    				android:layout_height="wrap_content"
+    				android:text="OK"/>
+    				
+    			<View 
+    				android:layout_width= "fill_parent"
+    				android:layout_height="1px"
+    				android:background="@color/cinzaEscuro"/>
+    				
+    			<TextView
+    				android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+    				android:textColor="@color/preto"
+    				android:text="Voltar ao menu principal"/>
+    			
+    			<Button
+    				android:id="@+id/telaErro_btMenu"
+    				android:layout_width="fill_parent" 
+    				android:layout_height="wrap_content"
+    				android:text="MENU"/>
+    				
+    			<View 
+    				android:layout_width= "fill_parent"
+    				android:layout_height="1px"
+    				android:background="@color/cinzaEscuro"/>
+    				
+    			<TextView
+    				android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+    				android:textColor="@color/preto"
+    				android:text="Finaliza a aplicação e retorna a tela de login"/>
+    			
+    			<Button
+    				android:id="@+id/telaErro_btLogin"
+    				android:layout_width="fill_parent" 
+    				android:layout_height="wrap_content"
+    				android:text="LOGIN"/>
+    				
+    			<View 
+    				android:layout_width= "fill_parent"
+    				android:layout_height="1px"
+    				android:background="@color/cinzaEscuro"/>    			
+    			  			
+    		</LinearLayout> 
+    		
+    	<LinearLayout 
+    		android:orientation="vertical"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:paddingTop="5px"
+    		android:paddingBottom="5px"
+    		android:background="@color/laranjadoLogo">
+    		
+    		<TextView    			
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="Cesare Transportes - 2011"
+    			android:layout_gravity="center"
+    			android:textStyle="bold"
+    			android:textColor="@color/laranjado"/>
+    		
+    	</LinearLayout>    		    	
+	</LinearLayout>
+</ScrollView>

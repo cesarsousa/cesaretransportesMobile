@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+    <LinearLayout 
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:background="@color/preto"
+    	android:padding="5dip">	
+    
+		<ImageView
+   			android:src="@drawable/detalhe_cliente_header"
+   			android:layout_width="fill_parent" 
+   			android:layout_height="wrap_content"/>
+   		   			
+   		<TextView  
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content" 
+    		android:text="Opções de Visualização de orçamentos"
+    		android:gravity="center"
+    		android:textColor="@color/laranjadoEscuro"
+    		android:textStyle="bold"
+    		android:textSize="15px"/>
+    		
+    	<LinearLayout
+    			android:orientation="horizontal"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:gravity="center"
+    			android:background="@color/cinzaEscuro"
+    			android:paddingTop="5px"
+    			android:paddingBottom="5px">
+    			
+    			<Button
+    				android:id="@+id/opcaoVisualOrcamentos_btListarTodos"
+    				android:layout_width="fill_parent"
+    				android:layout_height="wrap_content"
+    				android:text="Listar Orçamentos"/>
+    			
+    	</LinearLayout>    		
+    	
+    	<TextView  
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content" 
+    		android:text="Faça uma busca por tipo."
+    		android:textColor="@color/branco"
+    		android:textSize="12px"
+    		android:textStyle="bold"
+    		android:paddingTop="5px"/>    				
+    		
+    	<View 
+    		android:layout_width= "fill_parent"
+    		android:layout_height="1px"
+    		android:background="@color/cinzaEscuro"/>
+    		
+    	<RadioGroup
+    		android:id="@+id/opcaoVisualOrcamentos_radioGroup"
+    		android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:background="@color/cinzaClaro">
+			
+			<RadioButton
+				android:id="@+id/opcaoVisualOrcamentos_radioCodigo" 
+				android:checked="true"
+ 				android:text="Codigo do orçamento"
+ 				android:textColor="@color/preto"/>			
+ 				
+ 			<RadioButton
+				android:id="@+id/opcaoVisualOrcamentos_radioNome" 
+				android:checked="false"
+ 				android:text="Nome do cliente"
+ 				android:textColor="@color/preto"/>
+ 				
+ 			<RadioButton
+				android:id="@+id/opcaoVisualOrcamentos_radioEmail" 
+				android:checked="false"
+ 				android:text="Email do cliente"
+ 				android:textColor="@color/preto"/>
+ 				
+ 			<RadioButton
+				android:id="@+id/opcaoVisualOrcamentos_radioOrigem" 
+				android:checked="false"
+ 				android:text="Localização de origem"
+ 				android:textColor="@color/preto"/>
+ 				
+ 			<RadioButton
+				android:id="@+id/opcaoVisualOrcamentos_radioDestino" 
+				android:checked="false"
+ 				android:text="Localização do destino"
+ 				android:textColor="@color/preto"/>			
+		</RadioGroup>
+		
+		<LinearLayout
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"    		
+    		android:orientation="vertical"
+    		android:background="@color/cinzaEscuro"> 	   		
+		    	    		
+		    	<EditText
+		    		android:id="@+id/opcaoVisualOrcamentos_campoBuscar"
+		    		android:layout_width="fill_parent" 
+		    		android:layout_height="wrap_content"
+		    		android:paddingTop="5px"/>
+		    		
+		    	<Button
+		    		android:id="@+id/opcaoVisualOrcamentos_btBuscar"
+		    		android:layout_width="fill_parent" 
+		    		android:layout_height="wrap_content"
+		    		android:text="Buscar"/>
+    		
+    	</LinearLayout>  		
+    		
+    	<LinearLayout
+    			android:orientation="horizontal"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:gravity="center"
+    			android:background="@color/laranjado"
+    			android:paddingTop="5px">
+    			
+    			<Button
+    				android:id="@+id/opcaoVisualOrcamentos_btCancelar"
+    				android:layout_width= "wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="Cancelar"/>   			
+    	</LinearLayout> 
+    		
+    	<LinearLayout 
+    		android:orientation="vertical"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:paddingTop="5px"
+    		android:paddingBottom="5px"
+    		android:background="@color/laranjadoLogo">
+    		
+    		<TextView    			
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="Cesare Transportes - 2011"
+    			android:layout_gravity="center"
+    			android:textStyle="bold"
+    			android:textColor="@color/laranjado"/>
+    		
+    	</LinearLayout>    		    	
+	</LinearLayout>
+</ScrollView>

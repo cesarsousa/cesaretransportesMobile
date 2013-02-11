@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+    <LinearLayout 
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:padding="5px">	
+    
+		<ImageView
+   			android:src="@drawable/detalhe_cliente_header"
+   			android:layout_width="fill_parent" 
+   			android:layout_height="wrap_content"/>
+   			
+   		<TextView
+   			android:id="@+id/clientePerfil_data"  
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content"
+    		android:layout_gravity="right"
+    		android:textColor="@color/cinzaSuperEscuro"
+    		android:textStyle="bold"/>
+    		
+    	<View 
+			android:layout_width= "fill_parent"
+			android:layout_height="2px"
+			android:background="@color/cinzaEscuro"
+			android:paddingBottom="5px"/>   	
+   		
+   		<TableLayout
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:stretchColumns="1">
+    			
+    		<TableRow>
+    			<ImageView
+   					android:id="@+id/clientePerfil_foto"
+   					android:src="@drawable/foto_default"
+   					android:layout_width="wrap_content" 
+   					android:layout_height="wrap_content"
+    				android:layout_gravity="left"/>
+    				
+    			<LinearLayout
+    				android:layout_gravity="right"
+    				android:gravity="center_vertical"
+    				android:layout_width="wrap_content" 
+   					android:layout_height="wrap_content"
+   					android:orientation="vertical">
+   						
+   						<TextView
+   							android:id="@+id/clientePerfil_nome"  
+    						android:layout_width="wrap_content" 
+    						android:layout_height="wrap_content"
+    						android:gravity="right"
+    						android:textStyle="bold"    						
+    						android:textColor="@color/laranjado"/>
+    						
+    					<TextView
+   							android:id="@+id/clientePerfil_email"  
+    						android:layout_width="wrap_content" 
+    						android:layout_height="wrap_content"
+    						android:gravity="right"
+    						android:textColor="@color/laranjadoEscuro"/>
+    		
+    					<View 
+    						android:layout_width= "fill_parent"
+    						android:layout_height="2px"
+    						android:background="@color/cinzaEscuro"/>
+    		
+    					<TextView
+   							android:id="@+id/clientePerfil_documento"  
+    						android:layout_width="wrap_content" 
+    						android:layout_height="wrap_content"
+    						android:gravity="right"
+    						android:textColor="@color/laranjadoEscuro"/>
+    		
+				    	<TextView
+				   			android:id="@+id/clientePerfil_telefone"  
+				    		android:layout_width="wrap_content" 
+				    		android:layout_height="wrap_content"
+				    		android:gravity="right"
+				    		android:textColor="@color/laranjadoEscuro"/>
+				    		
+				    	<TextView
+				   			android:id="@+id/clientePerfil_telefoneComplemento"  
+				    		android:layout_width="wrap_content" 
+				    		android:layout_height="wrap_content"
+				    		android:gravity="right"
+				    		android:textColor="@color/laranjadoEscuro"/>
+    	    		
+				    	<View 
+				    		android:layout_width= "fill_parent"
+				    		android:layout_height="2px"
+				    		android:background="@color/cinzaEscuro"/>
+				    		
+				    	<TextView
+				   			android:layout_width="wrap_content" 
+				    		android:layout_height="wrap_content"
+				    		android:gravity="center"
+				    		android:text="Pressione Menu para mais opções"
+				    		android:textSize="10dip"
+				    		android:textColor="@color/preto"
+				    		android:textStyle="italic"/>
+   					</LinearLayout>			
+    			
+    			</TableRow>    				
+    		</TableLayout>
+    		
+    	<View 
+			android:layout_width= "fill_parent"
+			android:layout_height="2px"
+			android:background="@color/cinzaEscuro"
+			android:paddingTop="5px"/>
+    		
+    	<TextView
+   			android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content"
+    		android:text="Endereço"
+    		android:textColor="@color/cinzaEscuro"
+    		android:textStyle="bold"
+    		android:typeface="monospace"/> 	
+			
+		<TextView
+   			android:id="@+id/clientePerfil_enderecoLocalizacao"  
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content"
+    		android:textColor="@color/laranjadoEscuro"/>
+    						
+    	<TextView
+   			android:id="@+id/clientePerfil_enderecoCidadeEstado"  
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content"
+    		android:textColor="@color/laranjadoEscuro"/>
+    						
+    	<View 
+			android:layout_width= "fill_parent"
+			android:layout_height="2px"
+			android:background="@color/cinzaEscuro"
+			android:paddingTop="5px"/>		
+		
+		<LinearLayout
+    			android:orientation="horizontal"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:gravity="center"
+    			android:paddingTop="5px"
+    			android:background="@color/laranjado">
+    			
+    			<Button
+    				android:id="@+id/clientePerfil_btEditar"
+    				android:layout_width= "wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="Editar perfil"/>
+    				
+    			<Button
+    				android:id="@+id/clientePerfil_btMudarSenha"
+    				android:layout_width= "wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="Mudar senha"/>
+    				
+    			<Button
+    				android:id="@+id/clientePerfil_btMenu"
+    				android:layout_width= "wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="MENU"/>
+    				  			
+    	</LinearLayout> 		
+   	   			
+    	<LinearLayout 
+    		android:orientation="vertical"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:paddingTop="5px"
+    		android:paddingBottom="5px"
+    		android:background="@color/laranjadoLogo">
+    		
+    		<TextView    			
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="Cesare Transportes - 2011"
+    			android:layout_gravity="center"
+    			android:textStyle="bold"
+    			android:textColor="@color/laranjado"/>
+    		
+    	</LinearLayout>    		    	
+	</LinearLayout>
+</ScrollView>

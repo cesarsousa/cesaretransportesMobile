@@ -1,0 +1,37 @@
+simulando uma ligação
+
+ative o emulador com um projeto android
+
+abra o promt e digite
+
+telnet localhost 5554 (cofigure o windows se necessário).
+gsm call (numero do telefone com 8 digitos).
+
+.......................................................................................
+chave de acesso ao google maps
+
+C:\Program Files\Java\jdk1.6.0_24\bin>keytool -list -alias androiddebugkey -keys
+tore "C:\Users\Miguel\.android\debug.keystore"
+Enter keystore password: android
+androiddebugkey, Apr 10, 2011, PrivateKeyEntry,
+Certificate fingerprint (MD5): B5:73:3A:D7:BC:07:AF:CE:FC:CA:EE:92:5B:67:EF:A5
+
+possiveis erros
+
+a api do googles não foi baixada
+
+1 mude o locale do seu windows para ingles (estados unidos)
+1 utilize senha vazia
+2 troque sua versão da jdk (fudeu)
+
+Your key is:
+0uZjQFzHNu6fzIGLL4r3icq3eWMe1YWrXF731Iw
+This key is good for all apps signed with your certificate whose fingerprint is:
+B5:73:3A:D7:BC:07:AF:CE:FC:CA:EE:92:5B:67:EF:A5
+Here is an example xml layout to get you started on your way to mapping glory:
+              <com.google.android.maps.MapView
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:apiKey="0uZjQFzHNu6fzIGLL4r3icq3eWMe1YWrXF731Iw"
+                 />
+.................................................................................................

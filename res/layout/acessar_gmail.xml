@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:background="@color/preto"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+	<ImageView 
+		android:src="@drawable/aguia"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"/>
+
+	<TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:text="Visualizar contatos."
+		android:textSize="20px" 
+		android:textStyle="bold" 
+		android:gravity="center"
+		android:paddingTop="10px"
+		android:paddingLeft ="10px"
+		android:textColor="@color/laranjadoEscuro" />
+		
+	<TextView 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:text="Acesse os contatos diretamente pelo Gmail"
+		android:textSize="10px" 
+		android:textStyle="bold"		
+		android:paddingLeft ="10px"
+		android:textColor="@color/branco" />
+		
+	<LinearLayout 
+		android:orientation="vertical"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:paddingTop="5px" 
+		android:paddingBottom="5px"
+		android:background="@color/cinzaEscuro">
+		
+		<Button 
+			android:id="@+id/acessarGmail_btAcesso" 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:paddingTop="10px"
+			android:paddingLeft ="10px"		
+			android:text=" Acessar " />		
+	</LinearLayout>
+		
+	<LinearLayout 
+		android:orientation="vertical"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:paddingTop="5px" 
+		android:paddingBottom="5px"
+		android:background="@color/laranjadoLogo">
+
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="Cesare Transportes - 2011"
+			android:layout_gravity="center" 
+			android:textStyle="bold"
+			android:textColor="@color/laranjado" />
+
+	</LinearLayout>
+</LinearLayout>
+

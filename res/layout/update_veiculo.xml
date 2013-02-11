@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+    <LinearLayout 
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:background="@color/preto"
+    	android:padding="5dip">	
+    
+		<ImageView
+   			android:src="@drawable/detalhe_cliente_header"
+   			android:layout_width="fill_parent" 
+   			android:layout_height="wrap_content"/>
+   			
+   		<TextView  
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content" 
+    		android:text="Alterar Informações da Rota"
+    		android:gravity="center"
+    		android:textColor="@color/laranjadoEscuro"
+    		android:textStyle="bold"
+    		android:textSize="20px"/>
+   	
+   		<TextView
+   			android:id="@+id/editarVeiculo_placa"  
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content"   		
+    		android:textColor="@color/laranjado"
+    		android:textSize="15px"/>    		
+    		
+    		<TableLayout
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:stretchColumns="1">
+    			
+    			<TableRow>
+    			<TextView
+   					android:id="@+id/editarVeiculo_marca"  
+    				android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:textStyle="bold"
+    				android:layout_gravity="left"
+    				android:textColor="@color/cinzaEscuro"/>
+    				
+    			<TextView
+   					android:id="@+id/editarVeiculo_cor"  
+    				android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:textStyle="bold"
+    				android:layout_gravity="center"
+    				android:textColor="@color/cinzaEscuro"/>
+    			</TableRow>    				
+    		</TableLayout>
+    		
+    	<View 
+    		android:layout_width= "fill_parent"
+    		android:layout_height="2px"
+    		android:background="@color/cinzaEscuro"/>      	
+    		
+    	<TextView
+   			android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content"
+    		android:text="Origem da rota"
+    		android:textColor="@color/branco"/>    		
+    		
+    	<TableLayout
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:stretchColumns="1"
+    			android:padding="2px">
+    			
+    		<TableRow>
+    			<TextView
+   					android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="Data:"
+    				android:textStyle="bold"
+    				android:layout_gravity="left"
+    				android:textColor="@color/cinzaEscuro"/>
+    				
+    			<Button
+    				android:id="@+id/editarVeiculo_btDtSaida"
+    				android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:hint="Clique para alterar a data"
+    				android:text="Alterar"/>    			
+    		</TableRow>
+    		
+    		<TableRow>
+    			<TextView
+   					android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="Rua:"
+    				android:textStyle="bold"
+    				android:layout_gravity="left"
+    				android:textColor="@color/cinzaEscuro"/>
+    				
+    			<EditText
+   					android:id="@+id/editarVeiculo_enderecoOrigem"  
+    				android:layout_width="fill_parent" 
+    				android:layout_height="wrap_content"
+    				android:singleLine="true"/>
+    		</TableRow>
+    		
+    		<TableRow>
+    			<TextView
+   					android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="Cidade:"
+    				android:textStyle="bold"
+    				android:layout_gravity="left"
+    				android:textColor="@color/cinzaEscuro"/>
+    				
+    			<EditText
+   					android:id="@+id/editarVeiculo_cidadeOrigem"  
+    				android:layout_width="fill_parent" 
+    				android:layout_height="wrap_content"
+    				android:singleLine="true"/>
+    		</TableRow>
+    		
+    		<TableRow>
+    			<TextView
+   					android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="Estado:"
+    				android:textStyle="bold"
+    				android:layout_gravity="left"
+    				android:textColor="@color/cinzaEscuro"/>
+    				
+    			<AutoCompleteTextView
+   					android:id="@+id/editarVeiculo_estadoOrigem"  
+    				android:layout_width="fill_parent" 
+    				android:layout_height="wrap_content"
+    				android:completionThreshold="1"
+    				android:completionHint="sigla do estado."
+    				android:maxLength="2"/>
+    		</TableRow>   		
+    	</TableLayout>
+    		
+    	<View 
+    		android:layout_width= "fill_parent"
+    		android:layout_height="1px"
+    		android:background="@color/cinzaEscuro"/>    		
+    		
+    	<TextView
+   			android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content"
+    		android:text="Destino da rota"
+    		android:textColor="@color/branco"/>    	
+    		
+    	<TableLayout
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:stretchColumns="1">
+    			
+    		<TableRow>
+    			<TextView
+   					android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="Data:"
+    				android:textStyle="bold"
+    				android:layout_gravity="left"
+    				android:textColor="@color/cinzaEscuro"/>
+    				
+    			<Button
+    				android:id="@+id/editarVeiculo_btDtChegada"
+    				android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:hint="Clique para alterar a data"
+    				android:text="Alterar"/>   			
+    		</TableRow>
+    		
+    		<TableRow>
+    			<TextView
+   					android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="Rua:"
+    				android:textStyle="bold"
+    				android:layout_gravity="left"
+    				android:textColor="@color/cinzaEscuro"/>
+    				
+    			<EditText
+   					android:id="@+id/editarVeiculo_enderecoDestino"  
+    				android:layout_width="fill_parent" 
+    				android:layout_height="wrap_content"
+    				android:singleLine="true"/>
+    		</TableRow>
+    		
+    		<TableRow>
+    			<TextView
+   					android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="Cidade:"
+    				android:textStyle="bold"
+    				android:layout_gravity="left"
+    				android:textColor="@color/cinzaEscuro"/>
+    				
+    			<EditText
+   					android:id="@+id/editarVeiculo_cidadeDestino"  
+    				android:layout_width="fill_parent" 
+    				android:layout_height="wrap_content"
+    				android:singleLine="true"/>
+    		</TableRow>
+    		
+    		<TableRow>
+    			<TextView
+   					android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="Estado:"
+    				android:textStyle="bold"
+    				android:layout_gravity="left"
+    				android:textColor="@color/cinzaEscuro"/>
+    				
+    			<AutoCompleteTextView
+   					android:id="@+id/editarVeiculo_estadoDestino"  
+    				android:layout_width="fill_parent" 
+    				android:layout_height="wrap_content"
+    				android:completionThreshold="1"
+    				android:completionHint="sigla do estado."
+    				android:maxLength="2"/>
+    		</TableRow>   		
+    	</TableLayout>    		
+    		
+    	<View 
+    		android:layout_width= "fill_parent"
+    		android:layout_height="1px"
+    		android:background="@color/cinzaEscuro"/>
+    		   	
+    		
+    	<TextView
+   			android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content"
+    		android:text="Localização atual"
+    		android:textColor="@color/branco"/>
+    	
+    	<EditText
+   			android:id="@+id/editarVeiculo_localizacao"  
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content"/>   	
+    		
+    	<View 
+    		android:layout_width= "fill_parent"
+    		android:layout_height="1px"
+    		android:background="@color/cinzaEscuro"/>
+    		
+    		<LinearLayout
+    			android:orientation="horizontal"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:gravity="center"
+    			android:background="@color/laranjado">
+    			
+    			<Button
+    				android:id="@+id/editarVeiculo_btOK"
+    				android:layout_width= "wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="  OK  "/>
+    			
+    			<Button
+    				android:id="@+id/editarVeiculo_btCancelar"
+    				android:layout_width= "wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="Cancelar"/>
+    				
+    			<Button
+    				android:id="@+id/editarVeiculo_btMenu"
+    				android:layout_width= "wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="MENU"/>   			
+    		</LinearLayout> 
+    		
+    	<LinearLayout 
+    		android:orientation="vertical"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:paddingTop="5px"
+    		android:paddingBottom="5px"
+    		android:background="@color/laranjadoLogo">
+    		
+    		<TextView    			
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="Cesare Transportes - 2011"
+    			android:layout_gravity="center"
+    			android:textStyle="bold"
+    			android:textColor="@color/laranjado"/>
+    		
+    	</LinearLayout>    		    	
+	</LinearLayout>
+</ScrollView>

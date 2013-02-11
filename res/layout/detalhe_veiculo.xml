@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+    <LinearLayout 
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:background="@color/preto"
+    	android:padding="5dip">	
+    
+		<ImageView
+   			android:src="@drawable/detalhe_cliente_header"
+   			android:layout_width="fill_parent" 
+   			android:layout_height="wrap_content"/>
+   			
+   		<TextView  
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content" 
+    		android:text="Informação do Veículo"
+    		android:gravity="center"
+    		android:textColor="@color/laranjadoEscuro"
+    		android:textStyle="bold"
+    		android:textSize="20px"/>
+   	
+   		<TextView
+   			android:id="@+id/detalheVeiculo_placa"  
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content"   		
+    		android:textColor="@color/laranjado"
+    		android:textSize="15px"/>    		
+    		
+    		<TableLayout
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:stretchColumns="1">
+    			
+    			<TableRow>
+    			<TextView
+   					android:id="@+id/detalheVeiculo_marca"  
+    				android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:textStyle="bold"
+    				android:layout_gravity="left"
+    				android:textColor="@color/cinzaEscuro"/>
+    				
+    			<TextView
+   					android:id="@+id/detalheVeiculo_cor"  
+    				android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:textStyle="bold"
+    				android:layout_gravity="right"
+    				android:textColor="@color/cinzaEscuro"/>
+    			</TableRow>    				
+    		</TableLayout>
+    		
+    	<View 
+    		android:layout_width= "fill_parent"
+    		android:layout_height="2px"
+    		android:background="@color/cinzaEscuro"/>      	
+    		
+    	<TextView
+   			android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content"
+    		android:text="Orçamentos"
+    		android:textColor="@color/branco"/>
+    		
+    	<TextView
+   			android:id="@+id/detalheVeiculo_textoTotalOrcamentos"  
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content"
+    		android:textStyle="bold"
+    		android:layout_gravity="left"
+    		android:textColor="@color/cinzaEscuro"/>    		
+    		
+    	<View 
+    		android:layout_width= "fill_parent"
+    		android:layout_height="1px"
+    		android:background="@color/cinzaEscuro"/>    		   	
+    		
+    	<TextView
+   			android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content"
+    		android:text="Localização atual"
+    		android:textColor="@color/branco"/>
+    		
+    	<TextView
+    		android:id="@+id/detalheVeiculo_localizacao"
+   			android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content"    		
+    		android:textColor="@color/cinzaEscuro"
+    		android:textStyle="bold"/>
+    		
+    	<View 
+    		android:layout_width= "fill_parent"
+    		android:layout_height="1px"
+    		android:background="@color/cinzaEscuro"/>   	
+    		
+    	<!-- Opções de editar localização, listagem de orçamentos e confirmação de entregas -->   	
+    	
+    	<LinearLayout
+    		android:orientation="vertical"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:background="@color/cinzaEscuro">
+    		
+    			<TextView
+	    			android:layout_width= "wrap_content" 
+	    			android:layout_height="wrap_content"
+	    			android:paddingLeft="3px"
+	    			android:paddingRight="3px"
+	    			android:text="Editar a localização atual"
+	    			android:textColor="@color/preto"
+	    			android:textStyle="bold"
+	    			android:textSize="15px"/>   		
+    		
+	    		<EditText
+	    			android:id="@+id/detalheVeiculo_campoEditarLocalizacao"
+	    			android:layout_width="fill_parent" 
+    				android:layout_height="wrap_content"
+    				android:padding="3px"
+    				android:singleLine="true"/>   		
+	    		
+	    		<Button
+	    			android:id="@+id/detalheVeiculo_btEditarLocalizacao"
+	    			android:layout_width="fill_parent"
+	    			android:layout_height="wrap_content"
+	    			android:padding="3px"
+	    			android:text="Editar"/>	   		
+    		    		    	
+    	</LinearLayout>
+    	
+    	<View
+    		android:layout_width= "wrap_content" 
+    		android:layout_height="1px"
+    		android:background="@color/cinzaClaro"
+    		android:paddingTop="5px"/> 	 	
+    		
+    	<TableLayout
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:stretchColumns="1">   		
+    		
+    		<TableRow>    			
+	    		<TextView
+	    			android:layout_width= "wrap_content" 
+	    			android:layout_height="wrap_content"
+	    			android:layout_gravity="center_vertical"	    				
+	    			android:text="Clique para listar as entregas"
+	    			android:textColor="@color/laranjado"
+	    			android:textStyle="italic"
+	    			android:textSize="10px"/> 		
+	    		
+	    		<Button
+	    			android:id="@+id/detalheVeiculo_btListarOrcamentos"
+	    			android:layout_width= "wrap_content" 
+	    			android:layout_height="wrap_content"
+	    			android:layout_gravity="right"
+	    			android:text="  OK  "/>	    		
+    		</TableRow>
+    	</TableLayout>
+    			
+    	<View
+    		android:layout_width= "wrap_content" 
+    		android:layout_height="1px"
+    		android:background="@color/cinzaClaro"/>    	
+	    	
+	    <TableLayout
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:stretchColumns="1">   		
+    		
+    		<TableRow>    				
+	    		<TextView
+	    			android:layout_width= "wrap_content" 
+	    			android:layout_height="wrap_content"
+	    			android:layout_gravity="center_vertical"
+	    			android:text="Clique para confirmar todas as entregas"
+	    			android:textColor="@color/laranjado"
+	    			android:textStyle="italic"
+	    			android:textSize="10px"/> 	
+	    		
+	    		<Button
+	    			android:id="@+id/detalheVeiculo_btConfirmarEntregas"
+	    			android:layout_width= "wrap_content" 
+	    			android:layout_height="wrap_content"
+	    			android:layout_gravity="right"
+	    			android:text="  OK  "/>	    		
+    		</TableRow>
+    	</TableLayout>
+    		
+    	<View
+    		android:layout_width= "wrap_content" 
+    		android:layout_height="1px"
+    		android:background="@color/cinzaClaro"/>
+    		
+    	 <TableLayout
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:stretchColumns="1">   		
+    		
+    		<TableRow>    				
+	    		<TextView
+	    			android:layout_width= "wrap_content" 
+	    			android:layout_height="wrap_content"
+	    			android:layout_gravity="center_vertical"
+	    			android:text="Clique para visualizar mapa da localização"
+	    			android:textColor="@color/laranjado"
+	    			android:textStyle="italic"
+	    			android:textSize="10px"/> 	
+	    		
+	    		<Button
+	    			android:id="@+id/detalheVeiculo_btMapaLocalizacao"
+	    			android:layout_width= "wrap_content" 
+	    			android:layout_height="wrap_content"
+	    			android:layout_gravity="right"
+	    			android:text="  OK  "/>	    		
+    		</TableRow>
+    	</TableLayout>
+    		
+    		
+    		<LinearLayout
+    			android:orientation="horizontal"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:gravity="center"
+    			android:paddingTop="5px"
+    			android:background="@color/laranjado">
+    			
+    			<Button
+    				android:id="@+id/detalheVeiculo_btExcluir"
+    				android:layout_width= "wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="Excluir Veículo"/>  			
+    				
+    			<Button
+    				android:id="@+id/detalheVeiculo_btMenu"
+    				android:layout_width= "wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="MENU"/>   			
+    		</LinearLayout> 
+    		
+    	<LinearLayout 
+    		android:orientation="vertical"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:paddingTop="5px"
+    		android:paddingBottom="5px"
+    		android:background="@color/laranjadoLogo">
+    		
+    		<TextView    			
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="Cesare Transportes - 2011"
+    			android:layout_gravity="center"
+    			android:textStyle="bold"
+    			android:textColor="@color/laranjado"/>
+    		
+    	</LinearLayout>    		    	
+	</LinearLayout>
+</ScrollView>

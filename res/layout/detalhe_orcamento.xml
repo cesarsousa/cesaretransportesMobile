@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+    <LinearLayout 
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:background="@color/preto">	
+    
+		<ImageView
+   			android:src="@drawable/detalhe_cliente_header"
+   			android:layout_width="fill_parent" 
+   			android:layout_height="wrap_content"/>
+   		
+   		<TextView 
+   			android:id="@+id/detalheOrcamento_header" 
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content" 
+    		android:text="Informação do Orçamento"
+    		android:gravity="center"
+    		android:textColor="@color/laranjadoEscuro"
+    		android:textStyle="bold"
+    		android:textSize="20px"/>   			
+   					
+   		<TextView
+    		android:id="@+id/detalheOrcamento_statusCliente"
+   			android:layout_width="fill_parent" 
+   			android:layout_height="wrap_content"
+   			android:layout_gravity="right"/>		
+    		
+    	<TableLayout
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:shrinkColumns="1">
+    		
+    		<TableRow>
+    			<TextView  
+    				android:id="@+id/detalheOrcamento_nome"
+    				android:layout_width="fill_parent" 
+    				android:layout_height="wrap_content" 
+    				android:textColor="@color/laranjadoEscuro"
+    				android:textStyle="bold"
+    				android:textSize="15px"/>
+    		</TableRow>    		
+    		<TableRow>
+    			<TextView  
+    				android:id="@+id/detalheOrcamento_email"
+    				android:layout_width="fill_parent" 
+    				android:layout_height="wrap_content" 
+    				android:textColor="@color/laranjadoEscuro"/>
+    		</TableRow>    	
+    	</TableLayout>
+    	
+    	<TextView
+   			android:id="@+id/detalheOrcamento_telefone"  
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content"
+    		android:textStyle="bold"
+    		android:layout_gravity="left"
+    		android:textColor="@color/cinzaEscuro"/>
+    	
+    	<TableLayout
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:stretchColumns="1">
+    			
+    		<TableRow>    				
+    			<Button
+   					android:id="@+id/detalheOrcamento_btLigar"  
+    				android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="  Ligar  "
+    				android:layout_gravity="center"/>
+    				
+    			<Button
+   					android:id="@+id/detalheOrcamento_btSms"  
+    				android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="   SMS   "
+    				android:layout_gravity="right"/>
+    		</TableRow>    				
+    	</TableLayout>
+    	
+    	<View 
+    		android:layout_width= "fill_parent"
+    		android:layout_height="1px"
+    		android:background="@color/cinzaEscuro"/>
+    	
+    	<TableLayout
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content" 
+    		android:stretchColumns="1">
+    		
+    		<TableRow>
+    			<LinearLayout
+    				android:id="@+id/detalheOrcamento_layoutFotoVan"
+   					android:layout_width="wrap_content" 
+   					android:layout_height="wrap_content">
+   					
+   					<Button
+   						android:id="@+id/detalheOrcamento_btFotoVan"
+    					android:layout_width="wrap_content" 
+   						android:layout_height="wrap_content"/>	
+   				</LinearLayout>
+   					
+   				<LinearLayout
+   					android:layout_width="wrap_content" 
+   					android:layout_height="wrap_content"
+   					android:orientation="vertical">
+   					
+   					<TextView  
+    				android:id="@+id/detalheOrcamento_codigo"
+    				android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content" 
+    				android:textColor="@color/branco"
+    				android:layout_gravity="right"
+    				android:textStyle="bold"
+    				android:textSize="15px"/>
+    	
+    				<TextView  
+    				android:id="@+id/detalheOrcamento_data"
+    				android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content" 
+    				android:textColor="@color/branco"
+    				android:layout_gravity="right"
+    				android:textStyle="normal"
+    				android:textSize="15px"/>   				  					
+   				</LinearLayout>
+    		</TableRow>   	
+    	</TableLayout>
+    	
+    	<TextView  
+    		android:id="@+id/detalheOrcamento_detalheVeiculo"
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content" 
+    		android:textColor="@color/branco"
+    		android:layout_gravity="right"
+    		android:textStyle="bold"
+    		android:textSize="15px"/>
+    	
+    	<TextView  
+    		android:id="@+id/detalheOrcamento_dataPrevEntrega"
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content" 
+    		android:textColor="@color/branco"
+    		android:layout_gravity="right"
+    		android:textStyle="normal"
+    		android:textSize="15px"/>
+    				
+    	<TextView  
+    		android:id="@+id/detalheOrcamento_dataEntrega"
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content" 
+    		android:textColor="@color/branco"
+    		android:layout_gravity="right"
+    		android:textStyle="normal"
+    		android:textSize="15px"/>
+    	    		
+    	<View 
+    		android:layout_width= "fill_parent"
+    		android:layout_height="2px"
+    		android:background="@color/cinzaEscuro"/>    	      	
+    		
+    	<TextView
+   			android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content"
+    		android:text="Dados do Orçamento"
+    		android:textColor="@color/branco"/>   		
+    		
+    	<TableLayout
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:stretchColumns="1">
+    		
+    		<TableRow>
+    			<TextView
+    				android:id="@+id/detalheOrcamento_statusOrcamento"
+   					android:layout_width="wrap_content" 
+   					android:layout_height="wrap_content"   					
+   					android:textStyle="bold"
+   					android:layout_gravity="left"/>   
+    				
+    			<TextView
+   					android:id="@+id/detalheOrcamento_statusOrcamentoResposta"  
+    				android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:textStyle="bold"   					
+    				android:layout_gravity="right"/>
+    		</TableRow>
+    	</TableLayout>   		
+    				
+    			<TextView
+	   				android:layout_width="wrap_content" 
+	    			android:layout_height="wrap_content"
+	    			android:text="Origem:"
+	    			android:textStyle="bold"
+	    			android:layout_gravity="left"
+	    			android:textColor="@color/branco"/>
+    			<TextView
+   					android:id="@+id/detalheOrcamento_origem"  
+    				android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:layout_gravity="left"
+    				android:textColor="@color/cinzaEscuro"/>  		
+    				
+    			<TextView
+	   				android:layout_width="wrap_content" 
+	    			android:layout_height="wrap_content"
+	    			android:text="Destino:"
+	    			android:textStyle="bold"
+	   				android:layout_gravity="left"
+	   				android:textColor="@color/branco"/>
+    			<TextView
+   					android:id="@+id/detalheOrcamento_destino"  
+    				android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:layout_gravity="left"
+    				android:textColor="@color/cinzaEscuro"/> 		
+    		
+    		
+    		
+    	<TableLayout
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:stretchColumns="1">
+	    	<TableRow>
+	    			<TextView
+	   					android:layout_width="wrap_content" 
+	    				android:layout_height="wrap_content"
+	    				android:text="Peso:"
+	    				android:textStyle="bold"
+	    				android:layout_gravity="left"
+	    				android:textColor="@color/branco"/>
+	    				
+	    			<TextView
+	   					android:id="@+id/detalheOrcamento_peso"  
+	    				android:layout_width="wrap_content" 
+	    				android:layout_height="wrap_content"
+	    				android:layout_gravity="right"
+	    				android:textColor="@color/cinzaEscuro"/>
+	    	</TableRow>
+    		
+    		<TableRow>
+    			<TextView
+   					android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="Dimensão:"
+    				android:textStyle="bold"
+    				android:layout_gravity="left"
+    				android:textColor="@color/branco"/>
+    				
+    			<TextView
+   					android:id="@+id/detalheOrcamento_dimensao"  
+    				android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:layout_gravity="right"
+    				android:textColor="@color/cinzaEscuro"/>
+    		</TableRow>    	
+    	</TableLayout>
+    		
+    	<View 
+    		android:layout_width= "fill_parent"
+    		android:layout_height="1px"
+    		android:background="@color/cinzaEscuro"/>
+    		
+    	<TableLayout
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:stretchColumns="1">    		
+    		<TableRow>
+    			<TextView
+		   			android:layout_width="wrap_content" 
+		    		android:layout_height="wrap_content"
+		    		android:text="Valor:"
+		    		android:textStyle="bold"
+		    		android:layout_gravity="left"
+		    		android:textColor="@color/branco"/>
+    			
+    			<TextView
+		   			android:id="@+id/detalheOrcamento_valor"  
+		    		android:layout_width="wrap_content" 
+		    		android:layout_height="wrap_content"
+		    		android:layout_gravity="right"
+		    		android:textColor="@color/cinzaEscuro"/>
+    		</TableRow>    		
+    	</TableLayout>
+    		
+    	
+    		
+    	<View 
+    		android:layout_width= "fill_parent"
+    		android:layout_height="1px"
+    		android:background="@color/cinzaEscuro"/>
+    		
+    	<TextView
+   			android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content"
+    		android:text="Mensagem:"
+    		android:textStyle="bold"
+    		android:textColor="@color/branco"/>
+    		
+    		
+    	<TableLayout
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:background="@color/branco">
+    		
+    		<TableRow>
+    			<TextView  
+    				android:id="@+id/detalheOrcamento_mensagem"
+    				android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content" 
+    				android:textColor="@color/preto"/>
+    		</TableRow>
+    	</TableLayout>
+    		
+    	<View 
+    		android:layout_width= "fill_parent"
+    		android:layout_height="1px"
+    		android:background="@color/cinzaEscuro"/> 
+    		
+    	<LinearLayout
+    			android:orientation="horizontal"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:gravity="center"
+    			android:paddingTop="5px"
+    			android:background="@color/laranjado">
+    			
+    			<Button
+    				android:id="@+id/detalheOrcamento_btResposta"
+    				android:layout_width= "wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="Resposta"/>
+    			
+    			<Button
+    				android:id="@+id/detalheOrcamento_btExcluir"
+    				android:layout_width= "wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="Excluir"/>
+    				
+    			<Button
+    				android:id="@+id/detalheOrcamento_btEmail"
+    				android:layout_width= "wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="Email"/>
+    				
+    			<Button
+    				android:id="@+id/detalheOrcamento_btMenu"
+    				android:layout_width= "wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:text="MENU"/>   			
+    		</LinearLayout> 
+    		
+    	<!-- Rodapé -->
+    	<LinearLayout 
+    		android:orientation="vertical"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:paddingTop="5px"
+    		android:paddingBottom="5px"
+    		android:background="@color/laranjadoLogo">
+    		
+    		<TextView    			
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="Cesare Transportes - 2011"
+    			android:layout_gravity="center"
+    			android:textStyle="bold"
+    			android:textColor="@color/laranjado"/>
+    		
+    	</LinearLayout>    		    	
+	</LinearLayout>
+</ScrollView>
